@@ -1,0 +1,12 @@
+/* seems to work properly, (mattermost on openbsd that is) */ 
+/* but it seems like the plugins that you install can not be enabled since mattermost only compiles said plugins for
+/* FreeBSD, Linux and Darwin (mac) */ 
+
+/* What did i do to try to fix this? */ 
+
+/* in the makefile of a go plugin for mattermost you can find a 'go build' command for specific architectures + OS */
+
+/* i used this to hack my own command that looked something like this: */ 
+/* cd server && env GOOS=openbsd GOARCH=amd64 $(GO) build $(GO_BUILD_FLAGS) -gcflags "all=-N -l" -o dist/plugin/openbsd-amd64; */
+
+/* safe to say, that did not work */

@@ -1,0 +1,4 @@
+/* making signal-cli work properly with the dbus implementation i created on pdp-11 */ 
+( no not a real pdp-11 too bad it isnt )
+
+/* trying to figure out why go won't crosscompile mattermost modules for OpenBSD (also on pdp-11) */ 
